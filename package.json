@@ -1,0 +1,28 @@
+{
+  "name": "reactive-react",
+  "version": "0.0.0",
+  "description": "Mixins for React so that it's more reactive",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "author": "Gabe Scholz",
+  "license": "MIT",
+  "devDependencies": {
+    "coffee-loader": "^0.7.2",
+    "coffee-script": "^1.8.0",
+    "jest-cli": "^0.2.1",
+    "webpack": "^1.4.14"
+  },
+  "dependencies": {
+    "baconjs": "^0.7.41",
+    "react": "^0.12.2"
+  },
+  "jest": {
+    "rootDir": "./src",
+    "unmockedModulePathPatterns": [
+      "react"
+    ],
+    "scriptPreprocessor": "../test/coffeePreprocessor.js"
+  }
+}
